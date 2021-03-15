@@ -1,0 +1,1 @@
+export let decode = string => atob(string);

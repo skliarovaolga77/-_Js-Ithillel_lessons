@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,UAAM;EACL,eAAe,EAAE,QAAQ;EACzB,aAAE;IACD,MAAM,EAAE,cAAc",
+"sources": ["_task-1.sass"],
+"names": [],
+"file": "style.css"
+}

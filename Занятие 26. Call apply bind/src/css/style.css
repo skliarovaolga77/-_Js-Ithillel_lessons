@@ -1,0 +1,14 @@
+table.zeus {
+  border-collapse: collapse; }
+  table.zeus td {
+    border: 1px dashed red; }
+table.poseidon {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.poseidon td {
+  border: 1px dashed green;
+}
+
+/*# sourceMappingURL=style.css.map */

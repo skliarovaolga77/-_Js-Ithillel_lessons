@@ -1,0 +1,1 @@
+export let encode = string => btoa(string);

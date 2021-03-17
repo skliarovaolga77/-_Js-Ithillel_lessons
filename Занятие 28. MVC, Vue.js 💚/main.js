@@ -1,5 +1,5 @@
 // let app = new Vue({
-// 	el: '#app', // ссылка на элемент
+// 	el: '#app', // ссылка на элемент с к-м работаем
 // 	data: {
 // 		x: 10,
 // 		y: 200,
@@ -43,11 +43,11 @@
 // let app3 = new Vue({
 // 	el: '#app3',
 // 	data: {
-// 		seen: false
+// 		seen: true
 // 	}
 // })
 
-// setInterval(()=>{app3.seen = !app3.seen},1000);
+// setInterval(()=>{app3.seen = !app3.seen},2000);
 
 // let app4 = new Vue({
 // 	el: '#app4',
@@ -128,65 +128,66 @@
 // 	}
 // })
 
-// let appData = {
-// 	x: 60,
-// 	y: 200,
-// 	summ: '',
-// 	example: 'text',
-// 	inner: {
-// 		z: 120
-// 	}
-// }
+let appData = {
+	x: 60,
+	y: 200,
+	summ: '',
+	example: 'text',
+	inner: {
+		z: 120
+	}
+}
 
-// function onClick(){
-// 	this.summ = +this.summ + this.x;
-// }
+function onClick(){
+	this.summ = +this.summ + this.x;
+}
 
-// let app7 = new Vue({
-// 	el: '#app7',
-// 	data: appData,
-// 	methods: {
-// 		onClick,
-// 		getCustomValue(){
-// 			return this.x + this.y + this.inner.z;
-// 		}
-// 	},
-// 	beforeCreate(){
-// 		console.log('before Create');
-// 		console.log(this);
-// 		// debugger;
-// 	},
-// 	created(){
-// 		// нет привязки к el
-// 		console.log('created');
-// 		console.log(this);
-// 		this.x = 100000;
-// 		//debugger;
-// 	},
-// 	beforeMount(){
-// 		console.log(this);
-// 		console.log('before Mount');
-// 		//debugger;
-// 	},
-// 	mounted(){
-// 		console.log(this);
-// 		console.log('mounted');
-// 		//debugger;
-// 	},
-// 	beforeUpdate(){
-// 		console.log('before Update');
-// 		//debugger;
-// 	},
-// 	updated(){
-// 		console.log('updated');
-// 		//debugger;
-// 	},
-// 	beforeDestroy(){
-// 		console.log('before Destroy');
-// 	},
-// 	destoyed(){
-// 		console.log('destoyed');
-// 	}
-// })
+let app7 = new Vue({
+	el: '#app7',
+	data: appData,
+	methods: {
+		onClick,
+		getCustomValue(){
+			return this.x + this.y + this.inner.z;
+		}
+	},
+	beforeCreate(){
+		console.log('before Create');
+		console.log(this);
+		// debugger;
+	},
+	created(){
+		// нет привязки к el
+		console.log('created');
+		console.log(this);
+		//тут можно что то из полученных данных изменить
+		this.x = 100000;
+		//debugger;
+	},
+	beforeMount(){
+		console.log(this);
+		console.log('before Mount');
+		//debugger;
+	},
+	mounted(){
+		console.log(this);
+		console.log('mounted');
+		//debugger;
+	},
+	beforeUpdate(){
+		console.log('before Update');
+		//debugger;
+	},
+	updated(){
+		console.log('updated');
+		//debugger;
+	},
+	beforeDestroy(){
+		console.log('before Destroy');
+	},
+	destoyed(){
+		console.log('destoyed');
+	}
+})
 
-// app7.$destroy();
+app7.$destroy();

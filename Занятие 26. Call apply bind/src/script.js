@@ -74,11 +74,11 @@
 
 // console.log(decode(codeString));
 
-function summ(x,y){
-	return x+y;
-}
+// function summ(x,y){
+// 	return x+y;
+// }
 
-console.log( summ(10,20) );
+// console.log( summ(10,20) );
 // console.log('hello');
 
 // setTimeout(function(){console.log('hello')},1000);
